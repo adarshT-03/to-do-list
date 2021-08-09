@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 .App {
   text-align: center;
 }
-
+body{
+  background-color: #ccc !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +39,220 @@
     transform: rotate(360deg);
   }
 }
+.main{
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.left-sider{
+  width: 20%;
+  height:620px;
+  background-color: white;
+  padding: 15px;
+  position: relative;
+ 
+ 
+}
+.right-content{
+  width:80%;
+  background-color: #ccc;
+}
+.title-div{
+  font-size: 24px;
+  margin-bottom: 0 !important;
+}
+.title-div-inner{
+  font-size: 12px;
+
+}
+.dotted-line{
+  border-top: 1px dashed #ccc;
+}
+.quotes-box{
+  position: relative;
+  padding: 10px;
+  background: rgba(0, 0, 0, .04);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.quotes-p::before{
+  content: '“';
+    font-size: 45px;
+    opacity: .15;
+    position: absolute;
+    top: -22px;
+    left: 3px;
+    font-family: 'Passion One', cursive;
+    font-weight: 400;
+   
+  
+
+}
+.quotes-p{
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.quotes-p::after{
+  content: '”';
+    font-size: 45px;
+    opacity: .15;
+    position: absolute;
+    bottom: -44px;
+    right: 7px;
+    font-family: 'Passion One', cursive;
+    font-weight: 400;
+}
+.quotes-box::after{
+  content: '';
+    position: absolute;
+    top: 100%;
+    right: 30px;
+    border: 13px solid transparent;
+    border-top-color: rgba(0, 0, 0, .04);
+}
+
+.comment{
+  position: absolute;
+    bottom: -45px;
+    right: 10px;
+    font-weight: 600;
+    color: #b83f45;
+}
+.line2{
+ position: relative;
+
+ top: 45px;
+ 
+ border-top: 1px dashed #ccc;
+}
+.ul-div{
+  position: relative;
+  top:60px;
+}
+.ul-header{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px !important;
+}
+.ul-div ul{
+  color: black !important;
+  padding-left: 30px !important;
+}
+.ul-div ul li{
+  color:#b83f45;
+  font-size: 12px;
+  margin-left: 0 !important;
+  
+}
+.ul-div2{
+  margin-top: 10px;
+}
+.footer1{
+  position: relative;
+  top:70px;
+  font-size: 12px;
+  font-style: italic;
+  padding-bottom: 20px;
+
+}
+
+
+.right-content{
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.todo-text{
+  font-size: 80px !important;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0px !important;
+  color: rgba(175, 47, 47, 0.15) !important;
+}
+.input-box{
+  width: 50% !important;
+  height: 60px;
+  font-size: 25px !important;
+  font-style: italic;
+  padding-left: 40px !important;
+  border: none !important;
+  border-bottom: 1px solid #ccc !important;
+  
+  /* box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2) !important; */
+}
+.do-list{
+
+  height: 60px;
+  font-size: 25px !important;
+  font-style: italic;
+  padding-left: 40px !important;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+ 
+
+}
+.footer-div{
+  color: #777;
+  position: relative;
+   
+    
+    text-align: left;
+    border-top: 1px solid #e6e6e6;
+    margin: auto;
+    width: 50%;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-div span{
+  padding: 10px;
+  width: 20%;
+  display: flex;
+  padding-left: 10px;
+}
+.footer-div ul{
+  list-style-type:none ;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 0px !important;
+  align-items: center;
+  width: 60%;
+  padding-left: 0px !important;
+  justify-content: center;
+}
+.footer-div li{
+  padding: 10px;
+}
+.footer-div div{
+  text-align: right;
+  width: 20%;
+  padding-right: 10px;
+  font-size: 12px;
+}
+.footer-div::before{
+  content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 
+    0 8px 0 -3px #f6f6f6, 
+    0 9px 1px -3px rgb(0 0 0 / 20%),
+     0 16px 0 -6px #f6f6f6, 
+     0 17px 2px -6px rgb(0 0 0 / 20%);
+}
+
+
+
+
+
+
