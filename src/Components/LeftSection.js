@@ -1,5 +1,5 @@
 import React from 'react'
-import {Layout,Header,Sider,Content,Footer,Typography,Affix ,Input} from 'antd';
+import {Layout,Header,Sider,Content,Footer,Typography,Affix ,Input,Col} from 'antd';
 import 'antd/dist/antd.css'
 import '../App.css';
 
@@ -20,9 +20,9 @@ const LeftSection=()=>{
 
               </Typography.Paragraph>
              
-              <div className='dotted-line'></div>
-              <div>
-              <div className='quotes-box'>
+              <Col className='dotted-line'></Col>
+              <Layout className='quote-div'>
+              <Col className='quotes-box'>
               <Typography.Paragraph className='quotes-p' >
               Vue.js provides efficient MVVM data bindings with a simple and flexible API. 
               It uses plain JavaScript object models, 
@@ -31,10 +31,10 @@ const LeftSection=()=>{
            
               <p className='comment'>Vue.js</p>
 
-              </div>
-              <div className='dotted-line line2'></div>
-              </div>
-              <div className='ul-div'>
+              </Col>
+              <Col className='dotted-line line2'></Col>
+              </Layout>
+              <Col className='ul-div'>
               <Typography.Paragraph className='ul-header'>
                   Official Resources
               </Typography.Paragraph>
@@ -44,9 +44,9 @@ const LeftSection=()=>{
                   <li>Examples</li>
                   <li>Vue.js on Github</li>
               </ul>
-              <div className='dotted-line '></div>
-              </div>
-              <div className='ul-div ul-div2'>
+              <Col className='dotted-line '></Col>
+              </Col>
+              <Col className='ul-div ul-div2'>
               <Typography.Paragraph className='ul-header'>
                     Community
               </Typography.Paragraph>
@@ -56,8 +56,8 @@ const LeftSection=()=>{
                   <li>Discussion on Github</li>
                   
               </ul>
-              <div className='dotted-line '></div>
-              </div>
+              <Col className='dotted-line '></Col>
+              </Col>
               <Typography.Paragraph className='footer1'>
               If you have other helpful links to share, or find any 
               of the links above no longer work, 
@@ -74,9 +74,9 @@ const LeftSection=()=>{
               <Input className='input-box' placeholder='What need to be done?'
               
               />
-              <div className='do-list'>
+              <Layout className='do-list'>
 
-              </div>
+              </Layout>
               <footer className='footer-div'>
                   <span><strong>1</strong> item left</span>
                   <ul>
